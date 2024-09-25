@@ -31,6 +31,8 @@ document.getElementById('btn-donate-now-2').addEventListener('click', function(e
     if(donateNow>0 || typeof donateNow !== 'number'){
         const newBalance = balance - donateNow;
         document.getElementById('account-balance').innerText = newBalance;
+        const modal = document.getElementById("donationModal");
+        modal.classList.remove("hidden");
     }
     else{
         alert('Invalid donation amount');
@@ -45,6 +47,8 @@ document.getElementById('btn-donate-now-3').addEventListener('click', function(e
     if(donateNow>0 || typeof donateNow !== 'number'){
         const newBalance = balance - donateNow;
         document.getElementById('account-balance').innerText = newBalance;
+        const modal = document.getElementById("donationModal");
+        modal.classList.remove("hidden");
     }
     else{
         alert('Invalid donation amount');
